@@ -211,3 +211,37 @@ h2:after {
     margin-bottom: 30px;
 }
 
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*a lista agora ocupa toda largura da tela*/
+}
+
+.images-showcase li{
+    display: block; /*permite outros elementos ao lado*/
+    float: left; /*Faz com que os elementos sejam colocados lado a lado*/
+    width: 25%; /*cada item da lista terá 25% de largura em relação a tela... 100/4*/
+}
+
+.section-photos {
+    padding: 0;
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s; /*Adiciona um período de transição quando alterado a propriedade transform*/
+}
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /*Cor de fundo - preto*/
+}
